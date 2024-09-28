@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*
+{
+  font-family: "Inter", system-ui;
+}
+
+.btn-container>button:focus
+{
+  transition: all ease-in-out 0.5s;
+  background: linear-gradient(rgb(215, 231, 238),rgb(106, 184, 230));
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  color: white;
+
+}
+.btn-container>button:focus>span
+{
+  background-color: white;
+  color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+.btn-container>button>span
+{
+  background-color: rgb(158, 158, 158);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  text-align: center;
+  font-weight: 700;
+
+}
+@media screen and (max-width:720px) {
+  .btn-container
+  {
+    height: 30vh;
+  }
+}
+body
+{
+  background: url('./bg.jpg'); 
+  background-position: center;
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+}
